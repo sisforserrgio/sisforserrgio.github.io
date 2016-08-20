@@ -1,31 +1,3 @@
-$('.dropdown-button').dropdown({
-      inDuration: 300,
-      outDuration: 225,
-      constrain_width: false, // Does not change width of dropdown to that of the activator
-      hover: true, // Activate on hover
-      gutter: 1, // Spacing from edge
-      belowOrigin: true, // Displays dropdown below the button
-      alignment: 'right' // Displays dropdown with edge aligned to the left of button
-    }
-  );
-
-
-
-
-//window.onscroll = function() {
-//    if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight) && (window.matchMedia('(max-width: 500px)').matches)) {
-//         
-//        $(".btn-floating").css({'transform': 'scale(0)'});
-//    }
-//    else{
-//        
-//        $(".btn-floating").css({'transform': 'scale(1)'});
-//    }
-//};
-
-
-
-
 
 $('#FFAB').click(function() {
     if ($('#FFAB').hasClass('active')){
