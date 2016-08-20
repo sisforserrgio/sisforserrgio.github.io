@@ -109,6 +109,7 @@ row{
     font-size: 3vh;
     -webkit-transition: all .3s ease-out;
     transition: all .3s ease-out;
+    padding-left: 15px;
 }
 
 #serrgio-logo-img-id {
