@@ -82,9 +82,11 @@ row{
 
 .colcol{
     opacity: 0;
+    transition: all .5s cubic-bezier(.77,.18,.58,0);
 }
 
 #main{
+    transition: all .7s cubic-bezier(.77,.18,.58,0)!important;
     opacity: 0;
     
 }
