@@ -2,7 +2,7 @@
 $('#FFAB').click(function() {
     if ($('#FFAB').hasClass('active')){
          $('.overlay').css({
-        'opacity': '0',
+        'opacity': '1',
              'transform': 'scale(0)',
              'background-color': '#f44336'
     })
@@ -18,7 +18,7 @@ $('#FFAB').click(function() {
 $('#overlay').click(function() {
     $('.fixed-action-btn').closeFAB();
     $('.overlay').css({
-        'opacity': '0',
+        'opacity': '1',
         'transform': 'scale(0)',
         'background-color': '#f44336'
     })
