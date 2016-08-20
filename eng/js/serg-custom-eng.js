@@ -13,17 +13,30 @@ $('.dropdown-button').dropdown({
 
 
 
-window.onscroll = function() {
-    if (((window.innerHeight + window.scrollY) >= document.body.offsetHeight) && (window.matchMedia('(max-width: 360px)').matches)) {
-         
-        $(".btn-floating").css({'transform': 'scale(0)'});
-    }
-    else{
-        
-        $(".btn-floating").css({'transform': 'scale(1)'});
-    }
-};
+$('#FFAB').click(function() {
+    if ($('#FFAB').hasClass('active')){
+         $('.overlay').css({
+        'opacity': '0',
+             'transform': 'scale(0)',
+             'background-color': '#f44336'
+    })
+    } else {
+         $('.overlay').css({
+        'opacity': '0.9',
+             'transform': 'scale(40)',
+             'background-color': '#fff'
+    })
+      }
+});
 
+$('#overlay').click(function() {
+    $('.fixed-action-btn').closeFAB();
+    $('.overlay').css({
+        'opacity': '0',
+        'transform': 'scale(0)',
+        'background-color': '#f44336'
+    })
+});
 
 
   

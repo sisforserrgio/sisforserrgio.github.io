@@ -27,17 +27,18 @@ $('.dropdown-button').dropdown({
 
 
 
-
 $('#FFAB').click(function() {
     if ($('#FFAB').hasClass('active')){
          $('.overlay').css({
         'opacity': '0',
-             'transform': 'scale(0.1)'
+             'transform': 'scale(0)',
+             'background-color': '#f44336'
     })
     } else {
          $('.overlay').css({
         'opacity': '0.9',
-             'transform': 'scale(4)'
+             'transform': 'scale(40)',
+             'background-color': '#fff'
     })
       }
 });
@@ -46,7 +47,8 @@ $('#overlay').click(function() {
     $('.fixed-action-btn').closeFAB();
     $('.overlay').css({
         'opacity': '0',
-        'transform': 'scale(0.1)'
+        'transform': 'scale(0)',
+        'background-color': '#f44336'
     })
 });
 
