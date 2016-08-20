@@ -16,14 +16,14 @@ $('.dropdown-button').dropdown({
 $('#FFAB').click(function() {
     if ($('#FFAB').hasClass('active')){
          $('.overlay').css({
-        'opacity': '0',
+        'opacity': '0.9',
              'transform': 'scale(0)',
-             'background-color': '#f44336'
+             /*'background-color': '#f44336'*/
     })
     } else {
          $('.overlay').css({
         'opacity': '0.9',
-             'transform': 'scale(90)',
+             'transform': 'scale(60)',
              'background-color': '#fff'
     })
       }
@@ -32,9 +32,8 @@ $('#FFAB').click(function() {
 $('#overlay').click(function() {
     $('.fixed-action-btn').closeFAB();
     $('.overlay').css({
-        'opacity': '0',
-        'transform': 'scale(0)',
-        'background-color': '#f44336'
+        'opacity': '0.9',
+        'transform': 'scale(0)'
     })
 });
 
