@@ -23,7 +23,7 @@ $('#FFAB').click(function() {
     } else {
          $('.overlay').css({
         'opacity': '0.9',
-             'transform': 'scale(40)',
+             'transform': 'scale(90)',
              'background-color': '#fff'
     })
       }
