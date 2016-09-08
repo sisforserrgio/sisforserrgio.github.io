@@ -230,7 +230,8 @@ row {
         padding-top: 7px;
     }
 }
-@media only screen and (min-width: 960px)
+@media only screen and (min-width: 960px){
 .flow-text {
-    font-size: 1.3rem!important;
+    font-size: 1.4rem;
+}
 }
