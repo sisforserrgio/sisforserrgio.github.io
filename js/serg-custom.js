@@ -9,7 +9,7 @@ $('#FFAB').click(function() {
     } else {
          $('.overlay').css({
         'opacity': '0.9',
-             'transform': 'scale(60)',
+             'transform': 'scale(120)',
              'background-color': '#fff'
     })
       }
