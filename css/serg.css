@@ -216,6 +216,10 @@ row {
     height: 38%;
 }
 
+@media only screen and (min-width: 960px)
+.flow-text {
+    font-size: 1.3rem;
+}
 
 /*media-queries*/
 
