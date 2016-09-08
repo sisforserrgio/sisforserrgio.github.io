@@ -161,6 +161,8 @@ row {
 
 /*STOCK FRAMEWORK CLASSES*/
 
+.box-shadow: 0 2px 5px 0 rgba(0,0,0,0),0 2px 10px 0 rgba(0, 0, 0, 0);
+
 .col {
     padding-bottom: 10px!important;
 }
