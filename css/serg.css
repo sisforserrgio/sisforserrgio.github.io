@@ -9,7 +9,7 @@ body {
     padding: 0px 0px!important;
     color: #000;
     text-decoration: none;
-    letter-spacing: -1.1px;
+    letter-spacing: -1px;
 }
 
 body {
@@ -36,38 +36,40 @@ h1 {
     margin-bottom: 0px;
 }
 
-
 h2 {
     font-weight: 600;
     font-size: 4vh;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-p{
+
+b {
+    padding: 0px 0px 0px 5px!important;
+    font-size: 3.3vh!important;
+    font-weight: 600!important;
+}
+
+p {
     font-size: 2.5vh;
     font-weight: 300;
     letter-spacing: -0.5px;
 }
 
-b{
-    padding: 0px 0px 0px 5px;
-    font-size: 3.3vh;
-    font-weight: 600;
-}
-
-a{
+a {
     font-size: 3.5vh;
     color: #000;
     font-weight: 600;
     letter-spacing: -1.2px;
 }
 
-row{
+row {
     opacity: 0
 }
 
+
 /*CLASSES and IDs*/
-.overlay{
+
+.overlay {
     background-color: #fff;
     width: 55.5px;
     height: 55.5px;
@@ -77,18 +79,17 @@ row{
     transform: scale(0);
     bottom: 50px;
     border-radius: 440px;
-    transition: all .5s cubic-bezier(.77,.18,.58,0);
+    transition: all .5s cubic-bezier(.77, .18, .58, 0);
 }
 
-.colcol{
+.colcol {
     opacity: 0;
-    transition: all .5s cubic-bezier(.77,.18,.58,0);
+    transition: all .5s cubic-bezier(.77, .18, .58, 0);
 }
 
-#main{
-    transition: all .7s cubic-bezier(.77,.18,.58,0)!important;
+#main {
+    transition: all .7s cubic-bezier(.77, .18, .58, 0)!important;
     opacity: 0;
-    
 }
 
 #serrgio-logo-img {
@@ -137,24 +138,39 @@ row{
     top: 0px;
 }
 
-
-.portfolio-icons{
+.portfolio-icons {
     font-size: 7vh!important;
 }
 
+.resume-button {
+    font-size: 5vh;
+}
+
+.activator-card {
+    cursor: pointer;
+    padding: 30px
+}
+
+#materializecss {
+    top: 12px;
+    width: 4rem;
+    position: relative;
+    cursor: pointer;
+}
+
+
 /*STOCK FRAMEWORK CLASSES*/
 
-.col{
+.col {
     padding-bottom: 10px!important;
 }
 
-.card-title{
-        font-size: 3vh;
+.card-title {
+    font-size: 3vh;
 }
 
-
-.row{
-        margin-bottom: 0px;
+.row {
+    margin-bottom: 0px;
 }
 
 .btn-floating.btn-large i {
@@ -170,47 +186,47 @@ row{
     bottom: 50px;
 }
 
-.btn-large{
+.btn-large {
     font-size: 2vh;
     height: 70px;
     line-height: 67px;
 }
-.btn-large:hover{
+
+.btn-large:hover {
     background-color: #f44336!important
 }
 
-.page-footer{
+.page-footer {
     background-color: #fff!important;
     background-position: left 159px;
     background-size: 8000px;
-   /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c9/Rainbow-diagram-ROYGBIV.svg)*/
+    /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c9/Rainbow-diagram-ROYGBIV.svg)*/
 }
 
-.dropdown-content li>a, .dropdown-content li>span {
+.dropdown-content li>a,
+.dropdown-content li>span {
     color: #000000;
 }
 
-.material-tooltip{
+.material-tooltip {
     letter-spacing: 0px;
 }
 
+.card-title {
+    height: 38%;
+}
+
+
 /*media-queries*/
 
-@media (max-width: 601px){
+@media (max-width: 601px) {
     h1 {
-        font-size:5vh;
+        font-size: 5vh;
     }
-    .colcol{
-            padding-top: 15px!important;
+    .colcol {
+        padding-top: 15px!important;
     }
     header {
-    padding-top: 7px;
+        padding-top: 7px;
+    }
 }
-    
-}
-    
-
-    
-    
-    
-  
