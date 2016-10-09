@@ -13,21 +13,21 @@
 
 <body>
     <div id="main" class="emerge" style="transition: all .7s cubic-bezier(.77,.18,.58,0)!important; opacity: 0">
-        <!-- <header>
+        <header>
             <nav class="container">
                 <div class="row valign-wrapper">
                     <div class="col s3 m1 l1 center-align" id="serrgio-logo-img-id">
-                        <a href="./index.html"><img class="emerge" id="serrgio-logo-img" src="images/S-logo.png" alt="serrgio-logo-img" data-effect="relax" data-scale=".8" data-origin="bottom" data-duration="500"></a>
+                        <a href="./index.html"><img class="emerge" id="serrgio-logo-img" src="#" alt="serrgio-logo-img" data-effect="relax" data-scale=".8" data-origin="bottom" data-duration="500"><img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjMycHgiIGhlaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDk2MS41IDk2MS41IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5NjEuNSA5NjEuNTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik0zMTUuNiw4NTAuMzVjMC0zMy4xLTI2Ljg5OS02MC02MC02MEgxNTBjLTE2LjUsMC0zMC0xMy41LTMwLTMwdi01NTkuMmMwLTE2LjUsMTMuNS0zMCwzMC0zMGgxMDcuNWMzMy4xLDAsNjAtMjYuOSw2MC02MCAgIGMwLTMzLjEtMjYuOS02MC02MC02MEgxNTBjLTgyLjcsMC0xNTAsNjcuMy0xNTAsMTUwdjU1OS4yYzAsODIuNyw2Ny4zLDE1MCwxNTAsMTUwaDEwNS41QzI4OC43LDkxMC4zNSwzMTUuNiw4ODMuNDUsMzE1LjYsODUwLjM1eiAgICIgZmlsbD0iIzI5Mzg0YyIvPgoJPHBhdGggZD0iTTcwNiw5MTAuMzVoMTA1LjVjODIuNywwLDE1MC02Ny4zLDE1MC0xNTB2LTU1OS4yYzAtODIuNy02Ny4zLTE1MC0xNTAtMTUwSDcwNGMtMzMuMTAxLDAtNjAsMjYuOS02MCw2MCAgIGMwLDMzLjEsMjYuODk5LDYwLDYwLDYwaDEwNy41YzE2LjUsMCwzMCwxMy41LDMwLDMwdjU1OS4yYzAsMTYuNS0xMy41LDMwLTMwLDMwSDcwNmMtMzMuMTAxLDAtNjAsMjYuOS02MCw2MCAgIFM2NzIuODk5LDkxMC4zNSw3MDYsOTEwLjM1eiIgZmlsbD0iIzI5Mzg0YyIvPgoJPHBhdGggZD0iTTY3NC44OTksNjg2LjE1YzE3LjUtMjcuNSwyNi4zMDEtNTcuMSwyNi4zMDEtODguN2MwLTM0LjgtNy4zMDEtNjQuMS0yMi04Ny42OTljLTE0LjctMjMuNy0zNC45LTQyLjMwMS02MC45LTU2ICAgYy0yNS45LTEzLjYwMS02NS45LTI2LjktMTIwLTM5LjYwMWMtNTQuMS0xMi44LTg4LjItMjUtMTAyLjItMzYuOGMtMTEtOS4zLTE2LjUtMjAuNC0xNi41LTMzLjRjMC0xNC4zLDUuOS0yNS43LDE3LjctMzQuMiAgIGMxOC4zLTEzLjMsNDMuNi0xOS45LDc1LjktMTkuOWMzMS4zLDAsNTQuOCw2LjIsNzAuMzk5LDE4LjZjOS42MDEsNy42LDE3LjEwMSwxOC4yLDIyLjYwMSwzMS44YzcsMTcuNCwyNC4xLDI4LjYsNDIuOCwyNy44ICAgbDI2LjUtMS4yYzI5LjctMS4zLDQ5LjUtMzEuMSwzOS4zOTktNTkuMWMtOS4xLTI1LTIzLjg5OS00Ni41LTQ0LjYtNjQuNWMtMzQuOS0zMC4zLTg3LTQ1LjUtMTU2LjEtNDUuNSAgIGMtNDIuMzAxLDAtNzguNSw2LjQtMTA4LjQsMTkuMmMtMjkuOSwxMi44LTUyLjgsMzEuNC02OC44LDU1LjhjLTE1LjksMjQuNC0yMy45LDUwLjctMjMuOSw3OC43YzAsNDMuNiwxNi45LDgwLjUsNTAuNywxMTAuOCAgIGMyNCwyMS41LDY1LjksMzkuNjk5LDEyNS41LDU0LjVjNDYuMywxMS41LDc2LDE5LjUsODksMjRjMTksNi44LDMyLjQsMTQuNjk5LDQwLDIzLjg5OWM3LjYsOS4xMDEsMTEuNSwyMC4yLDExLjUsMzMuMiAgIGMwLDIwLjMtOS4xLDM4LTI3LjIsNTMuMmMtMTguMiwxNS4yLTQ1LjEsMjIuNy04MSwyMi43Yy0zMy44LDAtNjAuNy04LjUtODAuNi0yNS41Yy0xMy40LTExLjUtMjMuOC0yNy40LTMxLjItNDcuNyAgIGMtNi44LTE4LjktMjUuNi0zMC43LTQ1LjYtMjguOGwtMjIuNSwyLjE5OWMtMjcuOSwyLjctNDYsMzAuNC0zNy43LDU3LjEwMWMxMS40LDM2LjUsMzAuMSw2Niw1Niw4OC4zICAgYzM3LjMsMzIuMiw5MC44LDQ4LjMsMTYwLjM5OSw0OC4zYzQ3LjgwMSwwLDg3LjgwMS02LjcsMTE5LjgwMS0yMC4xQzYzMi42LDczNC4xNSw2NTcuMzk5LDcxMy42NSw2NzQuODk5LDY4Ni4xNXoiIGZpbGw9IiMyOTM4NGMiLz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" /></a>
                     </div>
                     <div class="col s6 m10 l10" id="serrgio-logo-text">is for Sergio</div>
-                    <div class="col s3 m1 l1"> <a class='dropdown-button center more_vert activator' href='#' data-activates='dropdown1'><i class="material-icons emerge" data-effect="relax" data-scale=".8" data-origin="bottom" data-duration="700" data-continue="true" data-hold="500">more_vert</i></a>
+                    <!-- <div class="col s3 m1 l1"> <a class='dropdown-button center more_vert activator' href='#' data-activates='dropdown1'><i class="material-icons emerge" data-effect="relax" data-scale=".8" data-origin="bottom" data-duration="700" data-continue="true" data-hold="500">more_vert</i></a>
                         <ul id='dropdown1' class='dropdown-content'>
                             <li><a href="./eng/index.html">See in English</a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
             </nav>
-        </header> -->
+        </header>
         <div class="container">
             <div class="row">
                 <h1>Привет,
