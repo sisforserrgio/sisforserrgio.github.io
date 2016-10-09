@@ -6,7 +6,7 @@ body {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     background-color: #f9fdff;
-    padding: 0px 0px!important;
+    padding: 55px 0px 0px 0px!important;
      color: rgb(41, 56, 76);
     text-decoration: none;
     letter-spacing: -1px;
@@ -141,7 +141,7 @@ row {
 }
 
 .portfolio-icons {
-    font-size: 7vh!important;
+    width: 11vh!important;
 }
 
 .resume-button {
@@ -208,7 +208,7 @@ row {
 }
 
 .page-footer {
-    background-color: none!important;
+    background-color: transparent!important;
     background-position: left 159px;
     background-size: 8000px;
     /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/c/c9/Rainbow-diagram-ROYGBIV.svg)*/
