@@ -162,6 +162,9 @@ row {
 
 
 /*STOCK FRAMEWORK CLASSES*/
+.backdrop{
+    background-color: #29384c;
+}
 
 .card{
     box-shadow: 0 2px 5px 0 rgba(104, 114, 127, 0),0 2px 10px 0 rgba(135, 163, 177, 0.19);
