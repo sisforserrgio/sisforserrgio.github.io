@@ -1,0 +1,77 @@
+.home__main {
+}
+
+.home__serge {
+  padding: 5px 20px;
+  background: #000;
+  transition: 200ms all ease-in-out;
+  color: #fff;
+}
+
+.home__serge:hover {
+  color: #ffd227;
+}
+
+.home__greeting {
+  margin: auto;
+  width: 80vw;
+  font-size: 5vw;
+  line-height: 6.5vw;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.home__vr{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  cursor:pointer;
+  transition: 200ms all ease-in-out;
+}
+
+.home__vr-img{
+  z-index: 100;
+  margin: 21px;
+  padding: 5px;
+  width: 40px;
+  background: #fff;
+  transition: 200ms all ease-in-out;
+}
+
+.home__vr-img_red,.home__vr-img_blue{
+  position: absolute;
+  z-index: 101;
+  margin: 21px;
+  padding: 5px;
+  width: 40px;
+  opacity: 0;
+  transition: 400ms all ease-in-out;
+  transform: translateX(0px);
+  mix-blend-mode: lighten;
+}
+.home__vr:hover .home__vr-img_red{
+  opacity: 1;
+  filter: invert(100%) sepia() saturate(10000%) hue-rotate(-85deg);
+  transform: translateX(10px);
+}
+.home__vr:hover .home__vr-img_blue{
+  opacity: 1;
+  filter: invert(100%) sepia() saturate(10000%) hue-rotate(130deg);
+  transform: translateX(-10px);
+  animation: bounceRight ease-in 0.25s;
+}
+
+.home__vr:hover  .home__vr-img{
+  border-radius: 32px;
+  transform: scale(0);
+}
+
+@media (max-width: 1000px) {
+  .home__serge {
+    padding: 5px 10px;
+  }
+  .home__greeting {
+    font-size: 8vw;
+    line-height: 10vw;
+}
+}

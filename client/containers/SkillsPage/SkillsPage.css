@@ -1,0 +1,37 @@
+.skillsPage__main-text {
+  margin: auto;
+      max-width: 1000px;
+      font-weight: 400;
+      line-height: 34px;
+      font-size: 26px;
+      width: 90%;
+}
+
+
+.skillsPage__js-link {
+  transition: 200ms all ease-in-out;
+  text-decoration: underline;
+}
+.skillsPage__js-link:hover {
+  font-weight: bold;
+}
+
+.skillsPage__span {
+  display: inline-block;
+  margin-bottom: 10px;
+  & b {
+    background-color: black;
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skillsPage__main-text {
+    line-height: 21px;
+    font-size: 17px;
+  }
+  ..skillsPage__span b {
+    background-color: black;
+    padding: 0px 6px;
+  }
+}

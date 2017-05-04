@@ -1,0 +1,43 @@
+
+.etceteraPage{
+  margin: auto;
+      max-width: 1000px;
+      font-weight: 400;
+      line-height: 34px;
+      font-size: 26px;
+      width: 90%;
+    & .etceteraPage__album-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    & .etceteraPage__album {
+      & .etceteraPage__album-link {
+            display: inline-block;
+        & .etceteraPage__album-img {
+          width: 150px;
+        }
+      }
+      & .etceteraPage__album-text {
+        background-color: #000;
+        padding: 2px 6px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 26px;
+        display: inline-block;
+      }
+      & .etceteraPage__album-text-small {
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .etceteraPage {
+    & .etceteraPage__album-wrapper {
+      flex-direction: column;
+    }
+}
+}

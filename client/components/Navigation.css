@@ -1,0 +1,12 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  & .navigation__menu-list {
+    top: 110px;
+    position: relative;
+  }
+  & .menu-button-wraper {
+      transform: translateX(0px);
+  }
+}

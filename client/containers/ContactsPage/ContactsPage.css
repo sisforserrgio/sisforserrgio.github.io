@@ -1,0 +1,52 @@
+
+.contactsPage__main-text {
+  margin: auto;
+      max-width: 1000px;
+      font-weight: 400;
+      line-height: 34px;
+      font-size: 26px;
+      width: 90%;
+}
+
+.contactsPage__span {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.contactsPage__item {
+  display: inline-block;
+  font-size: 48px;
+  transition: 200ms all ease-in-out;
+  line-height: 42px;
+}
+.contactsPage__item:hover {
+  font-weight: bolder;
+}
+
+.contactsPage__heading {
+  line-height: 65px;
+  margin: 10px 0 20px;
+  font-size: 75px;
+}
+.contactsPage__sub-heading {
+  margin: 10px 0;
+  font-size: 24px;
+  background-color: black;
+  padding: 0px 6px;
+}
+
+@media (max-width: 600px) {
+  .contactsPage__heading {
+    line-height: 65px;
+    margin: 10px 0;
+    font-size: 64px;
+}
+.contactsPage__item {
+    display: inline-block;
+    font-size: 28px;
+}
+.contactsPage__sub-heading {
+    margin: 2px 0;
+    font-size: 18px;
+}
+}
