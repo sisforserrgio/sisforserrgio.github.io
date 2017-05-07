@@ -1,54 +1,50 @@
-var path = require('path');
-var webpack = require('webpack');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var path = require("path");
+var webpack = require("webpack");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
-  entry: [
-    'webpack-hot-middleware/client',
-    path.join(__dirname, '/client/index.js')
-  ],
+  entry: [path.join(__dirname, "/client/index.js")],
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: '[name].js',
-    libraryTarget: 'umd',
-    publicPath: ''
+    path: path.join(__dirname, "public"),
+    filename: "[name].js",
+    libraryTarget: "umd",
+    publicPath: ""
   },
   plugins: [
     new webpack.DefinePlugin({
-  'process.env': {
-    NODE_ENV: JSON.stringify('production')
-  }
-}),
-new webpack.optimize.UglifyJsPlugin(),
-    new webpack.HotModuleReplacementPlugin(),
-    new ExtractTextPlugin('bundle.css')],
+      "process.env": {
+        NODE_ENV: JSON.stringify("production")
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin(),
+    new ExtractTextPlugin("bundle.css")
+  ],
   module: {
     rules: [
-      
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract({
           use: [
             {
-              loader: 'css-loader?importLoaders=1!postcss-loader'
+              loader: "css-loader?importLoaders=1!postcss-loader"
             }
           ],
-          fallback: 'style-loader'
+          fallback: "style-loader"
         })
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
-        loader: 'url-loader?limit=1024&name=fonts/[name].[ext]'
+        loader: "url-loader?limit=1024&name=fonts/[name].[ext]"
       },
       {
         test: /\.js$/,
-        loaders: ['babel-loader'],
-        include: path.join(__dirname, 'client'),
-        exclude: path.join(__dirname, 'node_modules')
+        loaders: ["babel-loader"],
+        include: path.join(__dirname, "client"),
+        exclude: path.join(__dirname, "node_modules")
       }
     ]
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx']
+    extensions: ["*", ".js", ".jsx"]
   }
 };

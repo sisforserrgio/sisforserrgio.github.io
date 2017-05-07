@@ -18,12 +18,14 @@ export default class SkillsPage extends React.Component {
             <b> ES5/ES6</b>
           </span>
           <br />
-          <span className="skillsPage__span"><b> React JSX Redux Router etc.</b> <b>Three.js</b> <b>jQuery</b> </span>
+          <span className="skillsPage__span">
+            <b>React</b> <b>JSX</b> <b>Redux</b> <b>Router etc.</b> <b>Three.js</b> <b>jQuery</b>{" "}
+          </span>
           <br />
           <span className="skillsPage__span"><b> SVG</b> (анимация, inline, фреймворки)</span>
           <br />
           <span className="skillsPage__span">
-            <b> HTML5 CSS3 </b>(анимация, фреймоврки, пост/пре-процессоры на ваш выбор) <b>BEM</b>
+            <b> HTML5 CSS3 </b>(кроссбраузер, адаптив, анимация, фреймоврки, пост/пре-процессоры на ваш выбор) <b>BEM</b>
           </span>
           <br />
           <span className="skillsPage__span"><b> Npm Git Yarn Webpack Gulp</b> Node(Express) - изучаю</span>

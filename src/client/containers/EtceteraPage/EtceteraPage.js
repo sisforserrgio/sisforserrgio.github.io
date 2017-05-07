@@ -14,7 +14,7 @@ export default class EtceteraPage extends React.Component {
         <h1>
           Хобби
         </h1>
-        <p className="etceteraPage__heading">Пишу музыку и орудую паялинком:</p>
+        <p className="etceteraPage__heading">Пишу музыку и орудую паяльником:</p>
 
         <div className="etceteraPage__album-wrapper">
           <div className="etceteraPage__album">

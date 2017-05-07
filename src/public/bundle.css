@@ -221,15 +221,18 @@ canvas, .overlay {
   left: 0;
   z-index: -1;
 }
-.home__main {
+.homemain {
+
 }
 
 .home__serge {
+
   padding: 5px 20px;
   background: #000;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   color: #fff;
+  opacity: 1;
 }
 
 .home__serge:hover {
@@ -573,7 +576,8 @@ canvas, .overlay {
 }
 .navigation .navigation__menu-list li {
   -webkit-transition: 200ms all ease;
-  transition: 200ms all ease
+  transition: 200ms all ease;
+  padding: 3px 0
 }
 .navigation .navigation__menu-list li:hover {
   font-weight: bold

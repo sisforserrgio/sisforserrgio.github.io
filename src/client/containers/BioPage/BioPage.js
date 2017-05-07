@@ -24,26 +24,22 @@ class BioPage extends React.Component {
           <span className="bioPage__span">
             Окончил МТУСИ специалистом кафедры многоканальных телекоммуникационных систем, работал системным администратором,
             потом инженером Дата-центра, сейчас окончательно определился с&nbsp;профессиональными интересами на&nbsp;будущее
-            и&nbsp;решил окунуться с&nbsp;головой в&nbsp;web-разработку.
+            и&nbsp;решил окунуться с&nbsp;головой в&nbsp;web-разработку. В данный момент работаю в City Business School.
           </span>
           <br />
           <span className="bioPage__span">
-            Я ищу интересную работу, связаную с: <br />
+            Я ищу интересную работу, связанную с: <br />
             —&nbsp;созданием живых и&nbsp;внушительных интерфейсов;<br />
-            —&nbsp;визулизацией данных, webVR, 2D/3D&nbsp;анимацией;<br />
+            —&nbsp;визуализацией данных, webVR, 2D/3D&nbsp;анимацией;<br />
             —&nbsp;чем угодно в&nbsp;web, что использует силу современного
-            <i><b>JavaScript </b></i>
+            <i> <b>JavaScript </b></i>
             .
           </span>
           <br />
           <div className="bioPage__button-wrapper">
             <a className="bioPage__button" target="_blank" href="https://github.com/yyynnn">
               Github
-              <img
-                className="bioPage__button-github-logo"
-                src="http://www.iconsdb.com/icons/preview/white/github-6-xxl.png"
-                alt=""
-              />
+              <img className="bioPage__button-github-logo" src="http://imgh.us/github-6-xxl.png" alt="" />
             </a>
             <a className="bioPage__button" target="_blank" href="https://codepen.io/yyynnn/">
               Codepen
