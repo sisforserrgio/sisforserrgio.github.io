@@ -573,7 +573,8 @@ canvas, .overlay {
 }
 .navigation .navigation__menu-list li {
   -webkit-transition: 200ms all ease;
-  transition: 200ms all ease
+  transition: 200ms all ease;
+  padding: 3px 0
 }
 .navigation .navigation__menu-list li:hover {
   font-weight: bold
