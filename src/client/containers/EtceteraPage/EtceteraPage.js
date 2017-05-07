@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router';
-import MenuButton from '../../components/MenuButton/MenuButton.js';
+import React from "react";
+import { Link } from "react-router";
+import MenuButton from "../../components/MenuButton/MenuButton.js";
 
-import './EtceteraPage.css';
+import "./EtceteraPage.css";
 
 export default class EtceteraPage extends React.Component {
   render() {
@@ -12,9 +12,9 @@ export default class EtceteraPage extends React.Component {
           <MenuButton id={this.props.route.id} title={this.props.route.title} />
         </Link>
         <h1>
-          Прочее
+          Хобби
         </h1>
-        <p className="etceteraPage__heading">Музыка:</p>
+        <p className="etceteraPage__heading">Пишу музыку и орудую паялинком:</p>
 
         <div className="etceteraPage__album-wrapper">
           <div className="etceteraPage__album">
@@ -31,6 +31,9 @@ export default class EtceteraPage extends React.Component {
             <p className="etceteraPage__album-text">Handler - A Key to Unlock EP 2015</p>
             <p className="etceteraPage__album-text-small">#post-post-industrial #cinematic #bass #dark #noise #synth</p>
           </div>
+        </div>
+        <div className="etceteraPage__videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/HS0HUDqgmYE" frameBorder="0" />
         </div>
       </div>
     );

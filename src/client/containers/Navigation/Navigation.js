@@ -1,14 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React from "react";
+import { Link } from "react-router";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
 
-import MenuButton from '../../components/MenuButton/MenuButton.js';
+import MenuButton from "../../components/MenuButton/MenuButton.js";
 
-import * as itemClick from '../../redux/actions/itemClick';
-import * as itemClickGeometry from '../../redux/actions/itemClickGeometry';
+import * as itemClick from "../../redux/actions/itemClick";
+import * as itemClickGeometry from "../../redux/actions/itemClickGeometry";
 
-import './Navigation.css';
+import "./Navigation.css";
+
+let closeButton = "http://imgh.us/001-clear-button.svg";
 
 class Navigation extends React.Component {
   constructor(props, context) {
@@ -33,7 +35,7 @@ class Navigation extends React.Component {
       <nav className="navigation">
 
         <Link to="/">
-          <MenuButton id={this.props.route.id} title={this.props.route.title} icon={'✖'} />
+          <MenuButton id={this.props.route.id} title={this.props.route.title} icon={closeButton} />
         </Link>
         <ul className="navigation__menu-list">
           <li onClick={() => this.onBtnColorChange(0.3, 0.1, 0.02, 0.04)}>
@@ -49,14 +51,26 @@ class Navigation extends React.Component {
             <Link to="contacts">Контакты</Link>
           </li>
           <li onClick={() => this.onBtnColorChange(0.1, 1, 0.1, 0.4)}>
-            <Link to="etc">Прочее</Link>
+            <Link to="etc">Хобби</Link>
           </li>
           <li>
             <Link to="vr">
               <div className="home__vr">
-                <img className="home__vr-img_red" src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png" alt="" />
-                <img className="home__vr-img_blue" src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png" alt="" />
-                <img className="home__vr-img" src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png" alt="" />
+                <img
+                  className="home__vr-img_red"
+                  src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png"
+                  alt=""
+                />
+                <img
+                  className="home__vr-img_blue"
+                  src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png"
+                  alt=""
+                />
+                <img
+                  className="home__vr-img"
+                  src="http://pcgamingwiki.com/images/thumb/3/3c/Editor_Icon_-_VR.svg/120px-Editor_Icon_-_VR.svg.png"
+                  alt=""
+                />
               </div>
             </Link>
           </li>

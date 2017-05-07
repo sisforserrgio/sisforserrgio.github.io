@@ -5,12 +5,24 @@
   --black: #000000;
 }
 
+
+
+.menu-button-img {
+      width: 25px;
+}
+
+
+
+
+
+
 .menu-button__icon{
 font-size: 40px;
 font-family: initial;
 height: 47px;
     line-height: 49px;
 }
+
 
 .menu-button-wraper {
   position: relative;
@@ -39,18 +51,22 @@ height: 47px;
   padding: 30px 30px;
   background-color: var(--white);
   color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .menu-button-block2{
-  padding: 10px 0 0;
   min-width: 160px;
   border-width: 2px;
   background-color: var(--black);
   color: var(--whitish);
   font-size: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .menu-button-block3{
-  padding: 0 30px 10px;
   color: var(--whitish);
   font-weight: 400;
   font-size: 16px;
@@ -62,6 +78,9 @@ height: 47px;
 }
 
 @media (max-width: 600px) {
+  .menu-button-block1{
+    padding: 20px 20px;
+  }
   .menu-button {
     margin-top: 0px;
     margin-right: 0px;

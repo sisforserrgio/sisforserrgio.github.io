@@ -1,16 +1,32 @@
 
-.etceteraPage{
-  margin: auto;
-      max-width: 1000px;
-      font-weight: 400;
-      line-height: 34px;
-      font-size: 26px;
-      width: 90%;
+  .etceteraPage{
+    margin: auto;
+    max-width: 1000px;
+    font-weight: 400;
+    line-height: 34px;
+    font-size: 24px;
+    width: 90%;
+    margin-top: 140px;
+    & .etceteraPage__videoWrapper {
+    	position: relative;
+    	padding-bottom: 56.25%; /* 16:9 */
+    	padding-top: 100px;
+    	height: 0;
+      text-align: center;
+    }
+    & .etceteraPage__videoWrapper iframe {
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+    	width: 80%;
+    	height: 80%;
+    }
     & .etceteraPage__album-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
     & .etceteraPage__album {
       & .etceteraPage__album-link {
             display: inline-block;
@@ -36,6 +52,7 @@
 
 @media (max-width: 500px) {
   .etceteraPage {
+      margin-top: 85px;
     & .etceteraPage__album-wrapper {
       flex-direction: column;
     }

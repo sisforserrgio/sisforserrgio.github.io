@@ -1,13 +1,13 @@
-import React from 'react';
-import React3 from 'react-three-renderer';
-import * as THREE from 'three';
-import ReactDOM from 'react-dom';
-import { connect } from 'react-redux';
-import * as TWEEN from 'es6-tween';
+import React from "react";
+import React3 from "react-three-renderer";
+import * as THREE from "three";
+import ReactDOM from "react-dom";
+import { connect } from "react-redux";
+import * as TWEEN from "es6-tween";
 
-import Mesh from './Mesh.js';
+import Mesh from "./Mesh.js";
 
-import './Overlay.css';
+import "./Overlay.css";
 class Overlay extends React.Component {
   constructor(props, context) {
     super(props, context);
@@ -29,8 +29,19 @@ class Overlay extends React.Component {
       scale: new THREE.Vector3(0.1, 1, 1)
     };
     this.startSiteTween = new TWEEN.Tween(this.colorSiteStart).to({ r: 0.4 }, 2000).repeat(0).start();
-    this.animateMeshesWidthTween = new TWEEN.Tween(this.angle).to({ angleTwo: 1 }, 10000).repeat(Infinity).yoyo(true).easing(TWEEN.Easing.Back.Out).delay(1300).start();
-    this.fovTween = new TWEEN.Tween(this.fov).to({ fovOne: 120 }, 20000).repeat(Infinity).yoyo(true).easing(TWEEN.Easing.Quadratic.InOut).start();
+    this.animateMeshesWidthTween = new TWEEN.Tween(this.angle)
+      .to({ angleTwo: 1 }, 10000)
+      .repeat(Infinity)
+      .yoyo(true)
+      .easing(TWEEN.Easing.Back.Out)
+      .delay(1300)
+      .start();
+    this.fovTween = new TWEEN.Tween(this.fov)
+      .to({ fovOne: 120 }, 20000)
+      .repeat(Infinity)
+      .yoyo(true)
+      .easing(TWEEN.Easing.Quadratic.InOut)
+      .start();
 
     this._onAnimate = () => {
       this.setState({
@@ -45,7 +56,9 @@ class Overlay extends React.Component {
   componentWillReceiveProps(nextProps) {
     // let widthGeometryTween = new TWEEN.Tween(this.geometry).to({ width: this.props.newWidth }, 1000).start();
     let menuColorTween = new TWEEN.Tween(this.colorSiteStart).to({ r: nextProps.colorBackground.r }, 1000).start();
-    let lineColorTween = new TWEEN.Tween(this.colorLine).to({ r: nextProps.colorLine.r, g: nextProps.colorLine.g, b: nextProps.colorLine.b }, 2000).start();
+    let lineColorTween = new TWEEN.Tween(this.colorLine)
+      .to({ r: nextProps.colorLine.r, g: nextProps.colorLine.g, b: nextProps.colorLine.b }, 2000)
+      .start();
   }
 
   _resetGroupPosition() {
@@ -77,18 +90,33 @@ class Overlay extends React.Component {
     let colorLine = new THREE.Color(this.colorLine.r, this.colorLine.g, this.colorLine.b);
     let colorBackground = new THREE.Color(this.colorSiteStart.r, this.colorSiteStart.g, this.colorSiteStart.b);
     return (
-      <React3 mainCamera="camera" width={width} height={height} clearColor={colorBackground} antialias={true} pixelRatio={1} onAnimate={this._onAnimate}>
+      <React3
+        mainCamera="camera"
+        width={width}
+        height={height}
+        clearColor={colorBackground}
+        antialias={false}
+        pixelRatio={0.8}
+        onAnimate={this._onAnimate}
+      >
         <resources>
           <meshBasicMaterial resourceId="materialONE" color={colorLine} />
         </resources>
         <scene>
-          <perspectiveCamera name="camera" fov={this.fov.fovOne} aspect={width / height} near={0.1} far={50} position={this.cameraPosition} />
+          <perspectiveCamera
+            name="camera"
+            fov={this.fov.fovOne}
+            aspect={width / height}
+            near={0.1}
+            far={50}
+            position={this.cameraPosition}
+          />
           <group position={this.state.groupPosition} rotation={this.state.groupRotation}>
             {this.meshPositions.map(meshPositions => (
               <Mesh
                 key={meshPositions.id}
                 position={meshPositions}
-                resId={'materialONE'}
+                resId={"materialONE"}
                 width={0.9}
                 height={this.geometry.height * meshPositions.id / 20}
                 scale={this.state.scale}
