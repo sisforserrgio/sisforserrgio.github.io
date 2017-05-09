@@ -221,7 +221,26 @@ canvas, .overlay {
   left: 0;
   z-index: -1;
 }
-.home__main {
+.home__lang-change {
+  position: fixed;
+  font-size: 24px;
+  font-weight: 600;
+  bottom: 22px;
+  right: 22px;
+  background-color: black;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: 200ms all ease;
+  transition: 200ms all ease;
+}
+
+.home__lang-change:hover {
+  background-color: #ffd227;
+  color: #000;
+}
+
+.home__lang-change_ru {
+  margin-right: 65px;
 }
 
 .home__serge {
@@ -230,6 +249,7 @@ canvas, .overlay {
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   color: #fff;
+  opacity: 1;
 }
 
 .home__serge:hover {
@@ -238,7 +258,7 @@ canvas, .overlay {
 
 .home__greeting {
   margin: auto;
-  width: 80vw;
+  width: 90vw;
   font-size: 5vw;
   line-height: 6.5vw;
   cursor: pointer;
@@ -247,8 +267,8 @@ canvas, .overlay {
 
 .home__vr{
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 1px;
+  bottom: 44px;
   cursor:pointer;
   -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
@@ -305,6 +325,16 @@ canvas, .overlay {
 }
 
 @media (max-width: 1000px) {
+  .home__lang-change_ru {
+    margin-right: 43px;
+}
+  .home__lang-change {
+    position: fixed;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 0px;
+    right: 0px;
+  }
   .home__serge {
     padding: 5px 10px;
   }
