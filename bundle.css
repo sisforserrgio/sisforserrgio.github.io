@@ -124,7 +124,6 @@ height: 47px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   -webkit-transform: translateX(160px);
           transform: translateX(160px);
@@ -230,7 +229,6 @@ canvas, .overlay {
   background-color: black;
   padding: 10px;
   cursor: pointer;
-  -webkit-transition: 200ms all ease;
   transition: 200ms all ease;
 }
 
@@ -246,7 +244,6 @@ canvas, .overlay {
 .home__serge {
   padding: 5px 20px;
   background: #000;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   color: #fff;
   opacity: 1;
@@ -267,10 +264,10 @@ canvas, .overlay {
 
 .home__vr{
   position: fixed;
-  right: 1px;
-  bottom: 44px;
+  right: 2px;
+     bottom: 50px;
+
   cursor:pointer;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
 }
 
@@ -280,7 +277,6 @@ canvas, .overlay {
   padding: 5px;
   width: 40px;
   background: #fff;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
 }
 
@@ -291,7 +287,6 @@ canvas, .overlay {
   padding: 5px;
   width: 40px;
   opacity: 0;
-  -webkit-transition: 400ms all ease-in-out;
   transition: 400ms all ease-in-out;
   -webkit-transform: translateX(0px);
           transform: translateX(0px);
@@ -374,7 +369,6 @@ canvas, .overlay {
   background-color: black;
   width: 177px;
   padding: 15px 15px;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -422,7 +416,6 @@ canvas, .overlay {
 
 
 .skillsPage__js-link {
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   text-decoration: underline;
 }
@@ -473,7 +466,6 @@ canvas, .overlay {
 .contactsPage__item {
   display: inline-block;
   font-size: 24px;
-  -webkit-transition: 200ms all ease-in-out;
   transition: 200ms all ease-in-out;
   line-height: 30px;
 }
@@ -602,7 +594,6 @@ canvas, .overlay {
   font-size: 24px
 }
 .navigation .navigation__menu-list li {
-  -webkit-transition: 200ms all ease;
   transition: 200ms all ease;
   padding: 3px 0
 }
